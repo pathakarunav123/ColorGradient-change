@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #009793,
+    #00bf72,
+    #a8eb12
+  );
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.copyCode{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  padding: 30px;
+  backdrop-filter: blur(10px); /* Blurring the background behind the element */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+}
+
+#myButton{
+  padding: 15px 30px; /* Increased padding for a larger button */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #051937;
+  transition: background-color 0.3s ease;
+}
+#myButton2{
+  padding: 15px 30px; /* Increased padding for a larger button */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #a8eb12;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Hover effect for the buttons */
+#myButton:hover, #myButton2:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
